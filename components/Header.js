@@ -1,11 +1,11 @@
+import CartWidget from "./CartWidget"
+import ItemListContainer from "./ItemListContainer"
+
 const Header = () => {
     return (
         <header id="main-header" className="header">
             <h1>E-Commerce Ejercicio</h1>
-            <span className="material-icons">
-                shopping_cart
-            </span>
-            <img src="/logo192.png" alt="logo" />
+            <CartWidget/>
             <nav class="menu">
                 <ul>
                     <li><a href="./index.html">INICIO</a></li>
@@ -15,6 +15,7 @@ const Header = () => {
                     <li><a href="./contact.html">CONTACTO</a></li>   
                 </ul>
             </nav>
+            <ItemListContainer greeting="Lista de items"/>
         </header>
     )
 }

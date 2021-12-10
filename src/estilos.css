@@ -1,3 +1,8 @@
 body {
     background-color: green;
 }
+
+#greetings{
+
+    font-family: 'Times New Roman', Times, serif;
+}
