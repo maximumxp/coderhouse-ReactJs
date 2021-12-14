@@ -1,5 +1,4 @@
 import CartWidget from "./CartWidget"
-import ItemListContainer from "./ItemListContainer"
 
 const Header = () => {
     return (
@@ -15,7 +14,6 @@ const Header = () => {
                     <li><a href="./contact.html">CONTACTO</a></li>   
                 </ul>
             </nav>
-            <ItemListContainer greeting="Lista de items"/>
         </header>
     )
 }
