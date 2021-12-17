@@ -1,5 +1,8 @@
 body {
-    background-color: green;
+    background-color: rgb(189, 216, 189);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #greetings{
@@ -15,7 +18,7 @@ body {
     align-items: center;
     gap: 2rem;
     height: 100vh;
-    background-color: gray;
+    background-color: rgb(34, 36, 34);
     color: white;
 }
 

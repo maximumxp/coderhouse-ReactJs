@@ -1,25 +1,28 @@
-const{useState} = React
+import { useState, useEffect } from 'react'
 import Header from "./components/Nav/Header"
-import ItemListContainer from "./ItemListContainer"
+import ItemListContainer from "./components/ItemListContainer"
+import ItemDetailContainer from './components/ItemDetailContainer'
 
-function App () {
-    const[count,setCount] = useState(0);
+
+function App() {
+
+  let [show, setShow] = useState(false)
+  const links = [
+    { href: "#", name: "inicio", id: 1 },
+    { href: "#", name: "Productos", id: 2 },
+    { href: "#", name: "Contactos", id: 3 },
+    { href: "#", name: "Carrito", id: 4 }
+]
+  
     return (
-
-        <div className="app">
-            <Header>
-            <ItemListContainer greeting="Lista de items"/>
-            <p>Pizzas</p>
-            <h1 className={count > 0 ? "positive" : count < 0 ? "negative" : null}>{count}</h1>
-                <div className="button-wrapper">
-                    <button onClick={()=>setCount(count-1)}>-</button>
-                    <button onClick={()=>setCount(count+1)}>+</button>
-                </div>
-            </Header>
-        </div>
-        
-    )
+      <>
+          <Header nombre={"E-Commerce"} links={links} />
+          <ItemListContainer greeting={"Bienvenido!"} />
+          <ItemDetailContainer/>
+      </>
+    );
 }
 
-ReactDOM.render(<App/>, document.getElementById("root"))
-export default App
+export default App;
+
+
