@@ -5,6 +5,11 @@ const productoInicial = {
     precio : 700
 }
 
+const getItem = () => {
+
+//placeholder
+
+}
 
 const ItemDetailContainer = () => {
 
